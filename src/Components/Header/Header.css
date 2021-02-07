@@ -1,0 +1,12 @@
+.header-container  {
+    background-color: #bbe1fa;
+    justify-content: space-between;
+}
+
+.header-buttons {
+    float: right;
+}
+
+.content {
+    justify-content: space-between;
+}
