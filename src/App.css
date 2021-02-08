@@ -1,5 +1,6 @@
 .container-slide {
     position: relative;
+    margin-bottom: -10px;
 }
 
 .container-content {
@@ -26,4 +27,17 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.paper button {
+    margin-bottom: 10px;
+}
+
+/* Specific slides */
+#about {
+    background-image: url('./assets/bottom-wave.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: -1px;
 }

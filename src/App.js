@@ -24,10 +24,10 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <ContainerLayout className="container-slide" id="about" background={ colors.lightBackground }>
+      <ContainerLayout className="container-slide" id="about" background={ colors.white }>
         <Box className="container-content">
           <ContentBox className={ classes.root } width="30%" height="100%">
-            <Paper className="paper">
+            <Paper className="paper" elevation={3}>
               <div>
                 <h1>Kevin Romero</h1>
                 <p>I am a self-taught software developer, casual gamer, and full-time geek.</p>

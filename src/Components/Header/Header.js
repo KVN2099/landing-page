@@ -6,19 +6,7 @@ import { makeStyles, ThemeProvider } from '@material-ui/core/styles';
 import './Header.css';
 import theme from '../../Themes/Light Theme/LightTheme';
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    display: 'flex',
-    flexDirection: 'row',
-    alignItems: 'right',
-    '& > *': {
-      margin: theme.spacing(1),
-    },
-  },
-}));
-
 function Header() {
-  const classes = useStyles();
   return (
       <div className="header-container">
           <Container style={{ display: 'flex' }} maxWidth="lg">
