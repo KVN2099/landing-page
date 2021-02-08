@@ -3,14 +3,10 @@
     display: flex;
     position: fixed;
     width: 100%;
-    margin-top: -52.5px;
+    z-index: 100;
 }
 
 .header-container div {
-    justify-content: space-between;
-}
-
-.content {
     justify-content: space-between;
 }
 

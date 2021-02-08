@@ -2,9 +2,9 @@ import React from 'react';
 import Button from '@material-ui/core/Button';
 import Box from '@material-ui/core/Box';
 import Container from '@material-ui/core/Container';
-import { makeStyles, createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
-import { green } from '@material-ui/core/colors';
+import { makeStyles, ThemeProvider } from '@material-ui/core/styles';
 import './Header.css';
+import theme from '../../Themes/Light Theme/LightTheme';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -19,27 +19,19 @@ const useStyles = makeStyles((theme) => ({
 
 function Header() {
   const classes = useStyles();
-  const theme = createMuiTheme({
-      palette: {
-        primary: {
-          main: '#D9E4FB',
-        },
-        secondary: {
-          main: '#f44336',
-        },
-      },
-  });
   return (
       <div className="header-container">
-          <Container style={{ display: 'flex' }} maxWidth="md">
+          <Container style={{ display: 'flex' }} maxWidth="lg">
               <Box className="header-icon" component="span" m={1}>
                   <Button href="#about">Logo</Button>
               </Box>
               <Box className="header-buttons" component="span" m={1}>
-                  <Button href="#about">About</Button>
-                  <Button href="#projects">Projects</Button>
-                  <Button href="#coding-challenges">Coding Challenges</Button>
-                  <Button href="#contact" variant="outlined" color="primary">Contact</Button>
+                <ThemeProvider theme={theme}>
+                    <Button href="#about">About</Button>
+                    <Button href="#projects">Projects</Button>
+                    <Button href="#coding-challenges">Coding Challenges</Button>
+                    <Button href="#contact" variant="outlined" color="primary">Contact</Button>
+                </ThemeProvider>
               </Box>
           </Container>
       </div>

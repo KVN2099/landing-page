@@ -4,12 +4,15 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 
-function ContainerLayout({ id, background }) {
+function ContainerLayout(props) {
+    const { id, background } = props;
     return (
         <div id={ id } style={{ backgroundColor: background}}>
         <CssBaseline />
-        <Container maxWidth="md">
-            <Typography component="div" style={{ height: '100vh' }} />
+        <Container maxWidth="lg">
+            <Typography component="div" style={{ height: '100vh', position: "relative" }}>
+                { props.children }
+            </Typography>
         </Container>
         </div>
     )
