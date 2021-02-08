@@ -10,7 +10,7 @@ function ContainerLayout(props) {
         <div id={ id } style={{ backgroundColor: background}}>
         <CssBaseline />
         <Container maxWidth="lg">
-            <Typography component="div" style={{ height: '100vh', position: "relative" }}>
+            <Typography component="div" className="typography">
                 { props.children }
             </Typography>
         </Container>

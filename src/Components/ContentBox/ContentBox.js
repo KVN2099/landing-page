@@ -1,10 +1,16 @@
 import React from 'react';
-import './ContentBox';
+import './ContentBox.css';
 
 function ContentBox(props) {
-    const { width, height } = props;
+    const { size, image } = props;
+    const imageStyle = {
+        backgroundImage: `url('${ image }')`,
+        backgroundPosition: 'center',
+        backgroundSize: 'contain',
+        backgroundRepeat: 'no-repeat'
+    }
     return (
-        <div style={{ width: width, height: height }}>
+        <div className={`wrapper ${ size }`} style={ imageStyle }>
             { props.children }
         </div>
     )

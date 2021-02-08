@@ -1,0 +1,13 @@
+@media screen and (max-width: 600px) {
+    .wrapper {
+        width: 100%;
+    }
+}
+
+.small {
+    width: 30%;
+}
+
+.large {
+    width: 70%;
+}

@@ -8,3 +8,14 @@ h1 {
     margin: 0;
     padding: 0;
 }
+
+.typography {
+    position: relative;
+    height: 100vh;
+}
+
+@media screen and (max-width: 600px) {
+    .typography {
+        height: 110vh;
+    }
+}
