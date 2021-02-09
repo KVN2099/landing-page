@@ -15,7 +15,7 @@
 }
 
 .paper {
-    height: 100%;
+    height: 315px;
     padding: 15px;
     text-align: center;
     position: relative;
@@ -54,5 +54,18 @@
     .container-content .wrapper {
         width: 100%;
         height: 350px;
+    }
+}
+
+@media screen and (max-height: 630px) and (min-width: 600px) {
+    .container-content {
+        width: 100%;
+        height: 315px;
+        margin: 0;
+        position: absolute;
+        top: 220px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
     }
 }

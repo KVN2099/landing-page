@@ -8,8 +8,10 @@ import { makeStyles, ThemeProvider } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import theme from './Themes/Light Theme/LightTheme';
 import mainImage from './assets/main-image.png';
+import smoothscroll from 'smoothscroll-polyfill';
 
 function App() {
+  smoothscroll.polyfill();
   const useStyles = makeStyles((theme) => ({
     root: {
       display: 'flex',
@@ -21,7 +23,9 @@ function App() {
       }
     },
   }));
+
   const classes = useStyles();
+
   return (
     <div className="App">
       <Header />
