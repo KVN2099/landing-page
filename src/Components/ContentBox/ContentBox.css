@@ -2,15 +2,11 @@
     .wrapper {
         width: 100%;
     }
-
-    .small {
-        min-width: none;
-    }
 }
 
 .small {
     width: 30%;
-    min-width: 233px;
+    min-width: 248px;
     margin: auto;
 }
 

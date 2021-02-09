@@ -22,6 +22,7 @@
 }
 
 .paper div {
+    padding: 0 15px;
     width: 100%;
     position: absolute;
     top: 50%;
@@ -31,15 +32,6 @@
 
 .paper div a {
     margin: 10px;
-}
-
-/* Specific slides */
-#about {
-    background-image: url('./assets/bottom-wave.svg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-bottom: -1px;
 }
 
 /* Responsive */

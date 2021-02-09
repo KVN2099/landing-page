@@ -8,7 +8,6 @@ import './Header.css';
 import theme from '../../Themes/Light Theme/LightTheme';
 import Drawer from '@material-ui/core/Drawer';
 import List from '@material-ui/core/List';
-import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 
@@ -29,7 +28,11 @@ function NormalHeader() {
         </>
     )
 }
+function ListItemLink(props) {
+  return <ListItem button component="a" {...props} />;
+}
 function ResponsiveHeader() {
+  let refs = ['about', 'projects', 'coding-challenges', 'contact'];
     const list = (anchor) => (
         <div
           className={clsx(classes.list, {
@@ -40,18 +43,10 @@ function ResponsiveHeader() {
           onKeyDown={toggleDrawer(anchor, false)}
         >
           <List>
-            {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-              <ListItem button key={text}>
+            {['About', 'Projects', 'Coding Challenges', 'Contact'].map((text, index) => (
+              <ListItemLink href={`#${ refs[index] }`} key={text}>
                 <ListItemText primary={text} />
-              </ListItem>
-            ))}
-          </List>
-          <Divider />
-          <List>
-            {['All mail', 'Trash', 'Spam'].map((text, index) => (
-              <ListItem button key={text}>
-                <ListItemText primary={text} />
-              </ListItem>
+              </ListItemLink>
             ))}
           </List>
         </div>
@@ -77,7 +72,7 @@ function ResponsiveHeader() {
         <div>
             {['left'].map((anchor) => (
             <React.Fragment key={anchor}>
-                <Button onClick={toggleDrawer(anchor, true)}>{"Menu"}</Button>
+                <Button onClick={toggleDrawer(anchor, true)} style={{ fontSize: "24px" }}>{"☰"}</Button>
                 <Drawer anchor={anchor} open={toggle[anchor]} onClose={toggleDrawer(anchor, false)}>
                 {list(anchor)}
                 </Drawer>
