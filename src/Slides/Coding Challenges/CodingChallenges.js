@@ -9,10 +9,9 @@ import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import challenges from '../../assets/Info/challenges';
 import ContainerLayout from '../../Components/Container/Container';
-import { Grid } from '@material-ui/core';
+import { Button, Grid } from '@material-ui/core';
 
 function CodingChallenges() {
-    console.log(challenges);
     const useStyles = makeStyles((theme) => ({
         root: {
           width: '100%',
@@ -39,10 +38,11 @@ function CodingChallenges() {
             <div className={`container-content challenges-container ${ classes.root }`}>
                 <Grid container spacing={2}>
                     <Grid item xs>
-                        { challenges.easy.map((accordion) => {
+                        <h1>Easy</h1>
+                        { challenges.easy.map((accordion, key) => {
                             const { id, type, name, description, link } = accordion;
                             return (
-                                <Accordion expanded={expanded === id} onChange={handleChange(id)}>
+                                <Accordion key={ key } expanded={expanded === id} onChange={handleChange(id)}>
                                     <AccordionSummary
                                     expandIcon={<ExpandMoreIcon />}
                                     aria-controls="panel2bh-content"
@@ -56,6 +56,10 @@ function CodingChallenges() {
                                     <AccordionDetails>
                                     <Typography>
                                         { description }
+                                        <br/>
+                                        <Button variant="outlined" href={ link } target="_blank" size="small" color="primary">
+                                            Visit
+                                        </Button>
                                     </Typography>
                                     </AccordionDetails>
                                 </Accordion>
@@ -63,10 +67,11 @@ function CodingChallenges() {
                         })}
                     </Grid>
                     <Grid item xs>
-                        { challenges.medium.map((accordion) => {
+                        <h1>Medium</h1>
+                        { challenges.medium.map((accordion, key) => {
                             const { id, type, name, description, link } = accordion;
                             return (
-                                <Accordion expanded={expanded === id} onChange={handleChange(id)}>
+                                <Accordion key={ key } expanded={expanded === id} onChange={handleChange(id)}>
                                     <AccordionSummary
                                     expandIcon={<ExpandMoreIcon />}
                                     aria-controls="panel3bh-content"
@@ -80,6 +85,10 @@ function CodingChallenges() {
                                     <AccordionDetails>
                                     <Typography>
                                         { description }
+                                        <br/>
+                                        <Button variant="outlined" href={ link } target="_blank" size="small" color="primary">
+                                            Visit
+                                        </Button>
                                     </Typography>
                                     </AccordionDetails>
                                 </Accordion>
@@ -87,10 +96,11 @@ function CodingChallenges() {
                         })}
                     </Grid>
                     <Grid item xs>
-                        { challenges.hard.map((accordion) => {
+                        <h1>Hard</h1>
+                        { challenges.hard.map((accordion, key) => {
                             const { id, type, name, description, link } = accordion;
                             return (
-                                <Accordion expanded={expanded === id} onChange={handleChange(id)}>
+                                <Accordion key={ key } expanded={expanded === id} onChange={handleChange(id)}>
                                     <AccordionSummary
                                     expandIcon={<ExpandMoreIcon />}
                                     aria-controls="panel4bh-content"
@@ -104,6 +114,10 @@ function CodingChallenges() {
                                     <AccordionDetails>
                                     <Typography>
                                         { description }
+                                        <br/>
+                                        <Button variant="outlined" href={ link } target="_blank" size="small" color="primary">
+                                            Visit
+                                        </Button>
                                     </Typography>
                                     </AccordionDetails>
                                 </Accordion>

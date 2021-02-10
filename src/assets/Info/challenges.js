@@ -14,14 +14,14 @@ const easy = [
             "link": ""
         },
         {
-            "id": "panel-easy1",
+            "id": "panel-easy3",
             "type": "JavaScript",
             "name": "Invert a number array",
             "description": "Invert a number array with 10 numbers without defining extra variables.",
             "link": ""
         },
         {
-            "id": "panel-easy2",
+            "id": "panel-easy4",
             "type": "Python",
             "name": "Invert a number array",
             "description": "Hello world!",

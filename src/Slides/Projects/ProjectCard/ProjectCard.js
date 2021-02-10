@@ -2,7 +2,6 @@ import { Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Grid
 import React from 'react';
 
 function ProjectCard({ title, description, link, image }) {
-    console.log(image);
     const useStyles = makeStyles((theme) => ({
         root: {
           flexGrow: 1,
@@ -22,7 +21,6 @@ function ProjectCard({ title, description, link, image }) {
             <Card style={{ minWidth: "150px" }}>
                 <CardActionArea>
                     <CardMedia
-                    component="image"
                     className={classes.media}
                     image={ image }
                     title={ title }
