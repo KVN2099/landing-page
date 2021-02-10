@@ -36,7 +36,7 @@ function CodingChallenges() {
     };
     return (
         <ContainerLayout className="container-slide" id="coding-challenges" background={ colors.background }>
-            <div className={`challenges-container ${ classes.root }`}>
+            <div className={`container-content challenges-container ${ classes.root }`}>
                 <Grid container spacing={2}>
                     <Grid item xs>
                         { challenges.easy.map((accordion) => {

@@ -11,7 +11,8 @@ h1 {
 
 .typography {
     position: relative;
-    height: 100vh;
+    height: max-content;
+    min-height: 100vh;
     display: flex;
     align-items: center;
 }
