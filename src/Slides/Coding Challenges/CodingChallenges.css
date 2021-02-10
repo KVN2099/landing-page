@@ -16,9 +16,3 @@ code {
 .Java {
     background-color: chartreuse;
 }
-
-@media screen and (max-width: 600px) {
-    .challenges-container {
-        margin-top: 125px;
-    }
-}

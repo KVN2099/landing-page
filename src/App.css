@@ -37,7 +37,7 @@
 @media screen and (max-width: 600px) {
     .container-content {
         display: block;
-        margin-top: 100px;
+        margin-top: 60px;
         height: max-content;
     }
 
