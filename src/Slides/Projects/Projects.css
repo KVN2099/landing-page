@@ -1,0 +1,9 @@
+#projects .container-content {
+    background-color: green;
+}
+
+@media screen and (max-width: 704px) and (min-width: 600px) {
+    #projects {
+        padding-top: 50px;
+    }
+}
