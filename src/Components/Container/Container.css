@@ -12,10 +12,12 @@ h1 {
 .typography {
     position: relative;
     height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 @media screen and (max-width: 600px) {
     .typography {
-        height: 110vh;
+        height: 100%;
     }
 }

@@ -24,7 +24,8 @@ const projects = [
         "description": "A demo issue tracker website with Frontend (React, Redux, React Router, Axios), and Backend (MongoDB, Node.js).",
         "link": "https://thekevo.online",
         "image": logo
-    }
+    },
+    
 ]
 
 export default projects;

@@ -5,3 +5,9 @@
     background-repeat: no-repeat;
     margin-bottom: -1px;
 }
+
+@media screen and (max-width: 600px) {
+    #about {
+        min-height: 800px;
+    }
+}
