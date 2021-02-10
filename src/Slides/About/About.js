@@ -23,7 +23,7 @@ function About() {
     
     const classes = useStyles();
     return (
-        <ContainerLayout className="container-slide" id="about" background={ colors.white }>
+      <ContainerLayout className="container-slide" id="about" background={ colors.white }>
         <Box className="container-content">
           <ContentBox className={ classes.root } size="small">
               <Paper className="paper" elevation={3}>
