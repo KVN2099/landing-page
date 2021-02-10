@@ -1,6 +1,5 @@
 import { Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Grid, makeStyles, Typography } from '@material-ui/core';
 import React from 'react';
-import imageStatic from '../../../assets/main-image.png';
 
 function ProjectCard({ title, description, link, image }) {
     console.log(image);
@@ -23,8 +22,9 @@ function ProjectCard({ title, description, link, image }) {
             <Card style={{ minWidth: "150px" }}>
                 <CardActionArea>
                     <CardMedia
+                    component="image"
                     className={classes.media}
-                    image={ `../../../assets/${image}` }
+                    image={ image }
                     title={ title }
                     />
                     <CardContent>
