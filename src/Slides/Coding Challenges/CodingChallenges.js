@@ -9,12 +9,14 @@ import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import challenges from '../../assets/Info/challenges';
 import ContainerLayout from '../../Components/Container/Container';
+import { Grid } from '@material-ui/core';
 
 function CodingChallenges() {
     console.log(challenges);
     const useStyles = makeStyles((theme) => ({
         root: {
-          width: '100%'
+          width: '100%',
+          flexGrow: 1,
         },
         heading: {
           fontSize: theme.typography.pxToRem(15),
@@ -35,28 +37,80 @@ function CodingChallenges() {
     return (
         <ContainerLayout className="container-slide" id="coding-challenges" background={ colors.background }>
             <div className={`challenges-container ${ classes.root }`}>
-                { challenges.easy.map((accordion) => {
-                    const { id, type, name, description, link } = accordion;
-                    return (
-                        <Accordion expanded={expanded === id} onChange={handleChange(id)}>
-                            <AccordionSummary
-                            expandIcon={<ExpandMoreIcon />}
-                            aria-controls="panel2bh-content"
-                            id="panel2bh-header"
-                            >
-                            <Typography className={classes.heading}><code className={ type }>{ type }</code></Typography>
-                            <Typography className={classes.secondaryHeading}>
-                                { name }
-                            </Typography>
-                            </AccordionSummary>
-                            <AccordionDetails>
-                            <Typography>
-                                { description }
-                            </Typography>
-                            </AccordionDetails>
-                        </Accordion>
-                    )
-                })}
+                <Grid container spacing={2}>
+                    <Grid item xs>
+                        { challenges.easy.map((accordion) => {
+                            const { id, type, name, description, link } = accordion;
+                            return (
+                                <Accordion expanded={expanded === id} onChange={handleChange(id)}>
+                                    <AccordionSummary
+                                    expandIcon={<ExpandMoreIcon />}
+                                    aria-controls="panel2bh-content"
+                                    id="panel2bh-header"
+                                    >
+                                    <Typography className={classes.heading}><code className={ type }>{ type }</code></Typography>
+                                    <Typography className={classes.secondaryHeading}>
+                                        { name }
+                                    </Typography>
+                                    </AccordionSummary>
+                                    <AccordionDetails>
+                                    <Typography>
+                                        { description }
+                                    </Typography>
+                                    </AccordionDetails>
+                                </Accordion>
+                            )
+                        })}
+                    </Grid>
+                    <Grid item xs>
+                        { challenges.medium.map((accordion) => {
+                            const { id, type, name, description, link } = accordion;
+                            return (
+                                <Accordion expanded={expanded === id} onChange={handleChange(id)}>
+                                    <AccordionSummary
+                                    expandIcon={<ExpandMoreIcon />}
+                                    aria-controls="panel3bh-content"
+                                    id="panel3bh-header"
+                                    >
+                                    <Typography className={classes.heading}><code className={ type }>{ type }</code></Typography>
+                                    <Typography className={classes.secondaryHeading}>
+                                        { name }
+                                    </Typography>
+                                    </AccordionSummary>
+                                    <AccordionDetails>
+                                    <Typography>
+                                        { description }
+                                    </Typography>
+                                    </AccordionDetails>
+                                </Accordion>
+                            )
+                        })}
+                    </Grid>
+                    <Grid item xs>
+                        { challenges.hard.map((accordion) => {
+                            const { id, type, name, description, link } = accordion;
+                            return (
+                                <Accordion expanded={expanded === id} onChange={handleChange(id)}>
+                                    <AccordionSummary
+                                    expandIcon={<ExpandMoreIcon />}
+                                    aria-controls="panel4bh-content"
+                                    id="panel4bh-header"
+                                    >
+                                    <Typography className={classes.heading}><code className={ type }>{ type }</code></Typography>
+                                    <Typography className={classes.secondaryHeading}>
+                                        { name }
+                                    </Typography>
+                                    </AccordionSummary>
+                                    <AccordionDetails>
+                                    <Typography>
+                                        { description }
+                                    </Typography>
+                                    </AccordionDetails>
+                                </Accordion>
+                            )
+                        })}
+                    </Grid>
+                </Grid>
             </div>
         </ContainerLayout>
     )
