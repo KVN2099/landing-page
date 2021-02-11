@@ -1,0 +1,14 @@
+.footer-container {
+    width: 100%;
+    min-height: 50px;
+    background-color: #2a4d69;
+    display: flex;
+    align-items: center;
+}
+
+.content-box {
+    width: 90%;
+    margin: 0 auto;
+    color: #fff;
+    padding: 5px;
+}
