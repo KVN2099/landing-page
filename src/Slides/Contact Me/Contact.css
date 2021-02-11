@@ -7,13 +7,19 @@
 }
 
 .paper-form {
+    max-width: 400px;
+    width: 90%;
     padding: 10px;
     text-align: center;
     margin: auto;
 }
 
 .paper-form .material-input {
-    margin: 10px;
+    margin: 10px auto;
     display: block;
-    width: 200px;
+    width: 100%;
+}
+
+.MuiInputBase-root {
+    width: inherit;
 }
