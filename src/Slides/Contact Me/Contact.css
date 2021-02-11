@@ -9,7 +9,6 @@
 .paper-form {
     max-width: 400px;
     width: 90%;
-    padding: 10px;
     text-align: center;
     margin: auto;
 }
@@ -22,4 +21,8 @@
 
 .MuiInputBase-root {
     width: inherit;
+}
+
+form {
+    margin: 10px;
 }

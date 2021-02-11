@@ -6,6 +6,7 @@ import emailjs from 'emailjs-com';
 import colors from '../../Themes/Light Theme/styles';
 import SendIcon from '@material-ui/icons/Send';
 import './Contact.css';
+import SocialMedia from '../../Components/Social Media Bar/SocialMedia';
 
 function Contact() {
     const [open, setOpen] = useState(false);
@@ -107,6 +108,7 @@ function Contact() {
                             </Alert>
                         </Snackbar>
                     </form>
+                    <SocialMedia />
                 </Paper>
             </Box>
         </ContainerLayout>
