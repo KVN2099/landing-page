@@ -8,16 +8,18 @@ function SocialMedia() {
         <Box className="socialMedia-box">
             {profiles.map((profile, key) => {
                 return (
-                    <Tooltip title={ profile.name } aria-label="add">
-                        <Box className="box">
-                            <CardMedia
-                                style={{ backgroundSize: 'contain' }}
-                                key={ key }
-                                className="icon"
-                                image={ profile.image }
-                                />
-                        </Box>
-                    </Tooltip>
+                    <a href={ profile.link } target="_blank">
+                        <Tooltip href={ profile.link } title={ profile.name } aria-label="add">
+                            <Box className="box">
+                                <CardMedia
+                                    style={{ backgroundSize: 'contain' }}
+                                    key={ key }
+                                    className="icon"
+                                    image={ profile.image }
+                                    />
+                            </Box>
+                        </Tooltip>
+                    </a>
                 )
             })}
         </Box>
