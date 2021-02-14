@@ -47,6 +47,13 @@ const easy = [
             "name": "Writing Short Code",
             "description": "Define a function named convert that takes a list of numbers as its only parameter and returns a list of each number converted to a string.",
             "link": "https://github.com/KVN2099/Python-Challenges/tree/main/Easy/Writing%20Short%20Code"
+        },
+        {
+            "id": "panel-easy8",
+            "type": "Python",
+            "name": "Boolean And",
+            "description": "Define a function named triple_and that takes three parameters and returns True only if they are all True and False otherwise.",
+            "link": "https://github.com/KVN2099/Python-Challenges/tree/main/Easy/Boolean%20And"
         }
 ]
 
