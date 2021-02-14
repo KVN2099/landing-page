@@ -95,6 +95,13 @@ const hard = [
         "name": "Thousands Separator",
         "description": "Write a function named format_number that takes a non-negative number as its only parameter. Your function should convert the number to a string and add commas as a thousands separator.",
         "link": "https://github.com/KVN2099/Python-Challenges/tree/main/Hard/Thousands%20Separator"
+    },
+    {
+        "id": "panel-hard3",
+        "type": "Python",
+        "name": "Combinatoric Selections",
+        "description": "How many, not necessarily distinct, values of (n choose r) for 1 <= n <= 100, are greater than one-million?",
+        "link": "https://github.com/KVN2099/Python-Challenges/tree/main/Hard/Combinatoric%20Selections"
     }
 ]
 
