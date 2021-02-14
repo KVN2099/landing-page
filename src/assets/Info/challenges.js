@@ -71,6 +71,13 @@ const medium = [
         "name": "Large Sum",
         "description": "Work out the first ten digits of the sum of the one-hundred 50-digit numbers.",
         "link": "https://github.com/KVN2099/Python-Challenges/tree/main/Medium/Large%20Sum"
+    },
+    {
+        "id": "panel-medium3",
+        "type": "Python",
+        "name": "Collatz Sequence",
+        "description": "Which starting number, under one million, produces the longest chain?",
+        "link": "https://github.com/KVN2099/Python-Challenges/tree/main/Medium/Longest%20Collatz%20Sequence"
     }
 ]
 
