@@ -64,6 +64,13 @@ const medium = [
         "name": "Smallest Multiple",
         "description": "What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?",
         "link": "https://github.com/KVN2099/Mathematic-Challenges/tree/main/Medium/Smallest%20Multiple/Smallest%20Multiple"
+    },
+    {
+        "id": "panel-medium2",
+        "type": "Python",
+        "name": "Large Sum",
+        "description": "Work out the first ten digits of the sum of the one-hundred 50-digit numbers.",
+        "link": "https://github.com/KVN2099/Python-Challenges/tree/main/Medium/Large%20Sum"
     }
 ]
 
