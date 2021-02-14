@@ -33,6 +33,20 @@ const easy = [
             "name": "Sum Square Difference",
             "description": "Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.",
             "link": "https://github.com/KVN2099/Mathematic-Challenges/tree/main/Easy/Sum%20Square%20Difference"
+        },
+        {
+            "id": "panel-easy6",
+            "type": "Python",
+            "name": "Capital Indexes",
+            "description": "Write a function named capital_indexes. The function takes a single parameter, which is a string. Your function should return a list of all the indexes in the string that have capital letters.",
+            "link": "https://github.com/KVN2099/Python-Challenges/tree/main/Easy/capital_indexes"
+        },
+        {
+            "id": "panel-easy7",
+            "type": "Python",
+            "name": "Writing Short Code",
+            "description": "Define a function named convert that takes a list of numbers as its only parameter and returns a list of each number converted to a string.",
+            "link": "https://github.com/KVN2099/Python-Challenges/tree/main/Easy/Writing%20Short%20Code"
         }
 ]
 
@@ -53,6 +67,13 @@ const hard = [
         "name": "Question Marks",
         "description": "Take a string parameter and return true if there are exactly 3 questions marks (?) between two numbers that add up to 10.",
         "link": "https://github.com/KVN2099/Mathematic-Challenges/tree/main/Hard/Question%20Marks"
+    },
+    {
+        "id": "panel-hard2",
+        "type": "Python",
+        "name": "Thousands Separator",
+        "description": "Write a function named format_number that takes a non-negative number as its only parameter. Your function should convert the number to a string and add commas as a thousands separator.",
+        "link": "https://github.com/KVN2099/Python-Challenges/tree/main/Hard/Thousands%20Separator"
     }
 ]
 
