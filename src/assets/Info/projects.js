@@ -1,5 +1,6 @@
 import mainImage from '../main-image.png';
 import logo from '../Logo TB.png';
+import chronos from '../chronos-logo.png';
 const projects = [
     {
         "title": "Blogsite",
@@ -20,11 +21,11 @@ const projects = [
         "image": logo
     },
     {
-        "title": "Bug Tracker",
-        "description": "A demo issue tracker website with Frontend (React, Redux, React Router, Axios), and Backend (MongoDB, Node.js).",
-        "link": "https://thekevo.online",
-        "image": logo
-    },
+        "title": "Chronos",
+        "description": "A time management app I designed for a high school assignment using Android Studio, Java, and Firebase.",
+        "link": "https://github.com/KVN2099/Chronos",
+        "image": chronos
+    }
     
 ]
 

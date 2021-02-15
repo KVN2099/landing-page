@@ -11,6 +11,7 @@
     width: 90%;
     text-align: center;
     margin: auto;
+    position: relative;
 }
 
 .paper-form .material-input {

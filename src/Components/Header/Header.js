@@ -15,7 +15,7 @@ function NormalHeader() {
     return (
         <>
             <Box className="header-icon" component="span" m={1}>
-                <Button href="#about">Logo</Button>
+                <Button href="#about" className="logo-text"><strong>Kevin<b>ho</b></strong></Button>
             </Box>
             <Box className="header-buttons" component="span" m={1}>
                 <ThemeProvider theme={theme}>
