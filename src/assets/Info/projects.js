@@ -15,9 +15,9 @@ const projects = [
         "image": mainImage
     },
     {
-        "title": "Bug Tracker",
-        "description": "A demo issue tracker website with Frontend (React, Redux, React Router, Axios), and Backend (MongoDB, Node.js).",
-        "link": "https://thekevo.online",
+        "title": "Google Maps Store Locator",
+        "description": "A webapp that uses the Google Maps API to load and filter stores in Los Angeles area.",
+        "link": "https://kvn2099.github.io/Google-Maps-App/",
         "image": logo
     },
     {
