@@ -25,22 +25,25 @@ function Projects() {
     }));
     const classes = useStyles();
     return (
-        <ContainerLayout className="container-slide" id="projects" background={ colors.secondary }>
-            <Box className={`container-content ${ classes.root }`}>
-                <Grid container spacing={2}>
-                        {projects.map((project, key) => {
-                            return (
-                                <ProjectCard 
-                                key={ key }
-                                title={ project.title }
-                                description={ project.description }
-                                link={ project.link }
-                                image={ project.image } />
-                            )
-                        })}
-                </Grid>
-            </Box>
-        </ContainerLayout>
+        <>
+            <ContainerLayout className="container-slide" id="projects" background={ colors.secondary }>
+                <span id="projects-ref"></span>
+                <Box className={`container-content ${ classes.root }`}>
+                    <Grid container spacing={2}>
+                            {projects.map((project, key) => {
+                                return (
+                                    <ProjectCard 
+                                    key={ key }
+                                    title={ project.title }
+                                    description={ project.description }
+                                    link={ project.link }
+                                    image={ project.image } />
+                                )
+                            })}
+                    </Grid>
+                </Box>
+            </ContainerLayout>
+        </>
     )
 }
 

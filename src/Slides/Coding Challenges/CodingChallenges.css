@@ -20,3 +20,13 @@ code {
 h1 {
     margin-bottom: 5px;
 }
+
+#coding-challenges-ref1 {
+    top: -55px;
+    position: absolute;
+}
+
+#coding-challenges-ref2 {
+    top: -45px;
+    position: absolute;
+}

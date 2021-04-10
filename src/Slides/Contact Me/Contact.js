@@ -102,7 +102,7 @@ function Contact() {
                         >
                             Send Email
                         </Button>
-                        <Snackbar open={ open } autoHideDuration={ 6000 } onClose={ handleClose }>
+                        <Snackbar open={ open } autoHideDuration={ 0 } onClose={ handleClose }>
                             <Alert onClose={ handleClose } severity={ severity }>
                                 { alertMessage }
                             </Alert>

@@ -35,6 +35,8 @@ function CodingChallenges() {
     };
     return (
         <ContainerLayout className="container-slide" id="coding-challenges" background={ colors.background }>
+            <span id="coding-challenges-ref1"></span>
+            <span id="coding-challenges-ref2"></span>
             <div className={`container-content challenges-container ${ classes.root }`}>
                 <Grid container spacing={2}>
                     <Grid item xs>

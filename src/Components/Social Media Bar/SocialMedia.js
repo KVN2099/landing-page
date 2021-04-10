@@ -1,4 +1,4 @@
-import { Box, CardMedia, Tooltip } from '@material-ui/core';
+import { Box, CardMedia } from '@material-ui/core';
 import React from 'react';
 import './SocialMedia.css';
 import profiles from '../../assets/Info/socialMediaProfiles';
@@ -10,14 +10,12 @@ function SocialMedia() {
                 return (
                     <a href={ profile.link } target="_blank">
                         <Box className="box">
-                            <Tooltip href={ profile.link } title={ profile.name } aria-label="add">
-                                    <CardMedia
-                                        style={{ backgroundSize: 'contain' }}
-                                        key={ key }
-                                        className="icon"
-                                        image={ profile.image }
-                                        />
-                            </Tooltip>
+                            <CardMedia
+                                style={{ backgroundSize: 'contain' }}
+                                key={ key }
+                                className="icon"
+                                image={ profile.image }
+                                />
                         </Box>
                     </a>
                 )

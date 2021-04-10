@@ -3,3 +3,8 @@
         padding-top: 50px;
     }
 }
+
+#projects-ref {
+    position: absolute;
+    top: -70px;
+}

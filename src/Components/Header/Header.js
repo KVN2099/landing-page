@@ -20,8 +20,8 @@ function NormalHeader() {
             <Box className="header-buttons" component="span" m={1}>
                 <ThemeProvider theme={theme}>
                     <Button href="#about">About</Button>
-                    <Button href="#projects">Projects</Button>
-                    <Button href="#coding-challenges">Coding Challenges</Button>
+                    <Button href="#projects-ref">Projects</Button>
+                    <Button href="#coding-challenges-ref1">Coding Challenges</Button>
                     <Button href="#contact" variant="outlined" color="primary">Contact</Button>
                 </ThemeProvider>
             </Box>
@@ -32,7 +32,7 @@ function ListItemLink(props) {
   return <ListItem button component="a" {...props} />;
 }
 function ResponsiveHeader() {
-  let refs = ['about', 'projects', 'coding-challenges', 'contact'];
+  let refs = ['about', 'projects-ref', 'coding-challenges-ref2', 'contact'];
     const list = (anchor) => (
         <div
           className={clsx(classes.list, {
@@ -91,7 +91,7 @@ function Header() {
         setwidth(window.innerWidth);
     });
     useEffect(() => {
-        if (width > 600) {
+        if (width > 680) {
             setwidthToggle(true);
         } else {
             setwidthToggle(false);
