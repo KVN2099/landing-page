@@ -29,7 +29,7 @@ function Projects() {
             <ContainerLayout className="container-slide" id="projects" background={ colors.secondary }>
                 <span id="projects-ref"></span>
                 <Box className={`container-content ${ classes.root }`}>
-                    <Grid container spacing={2}>
+                    <Grid container spacing={3}>
                             {projects.map((project, key) => {
                                 return (
                                     <ProjectCard 
@@ -37,7 +37,8 @@ function Projects() {
                                     title={ project.title }
                                     description={ project.description }
                                     link={ project.link }
-                                    image={ project.image } />
+                                    image={ project.image }
+                                    tags={ project.tags } />
                                 )
                             })}
                     </Grid>
