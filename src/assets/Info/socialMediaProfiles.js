@@ -5,6 +5,7 @@ import linkedin from '../Icons/linkedin.png';
 import youtube from '../Icons/youtube.png';
 import portfolio from '../Icons/portfolio-02.svg';
 import github from '../Icons/github.png';
+import medium from '../Icons/medium.png';
 
 const profiles = [
     {
@@ -33,9 +34,9 @@ const profiles = [
         link: "https://www.youtube.com/channel/UCKDV8Y48cXNzyJDYQCNAJMg"
     },
     {
-        name: "Blogsite",
-        image: portfolio,
-        link: "https://thekevo.online"
+        name: "Medium",
+        image: medium,
+        link: "https://kvn2099.medium.com/"
     },
     {
         name: "GitHub",

@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import React from 'react'
 import ContainerLayout from '../../Components/Container/Container'
 import ContentBox from '../../Components/ContentBox/ContentBox'
-import mainImage from '../../assets/main-image.png';
+import logo from '../../assets/The Kevo Logo-01.png';
 import theme from '../../Themes/Light Theme/LightTheme';
 import colors from '../../Themes/Light Theme/styles';
 import './About.css';
@@ -31,7 +31,7 @@ function About() {
                   <h1>Kevin Romero</h1>
                   <p>I am a self-taught software developer, casual gamer, and full-time geek.</p>
                   <ThemeProvider theme={theme}>
-                    <Button href="#projects" variant="contained" color="primary" disableElevation>
+                    <Button href="#projects-ref" variant="contained" color="primary" disableElevation>
                       Check Out My Projects!
                     </Button>
                     <Button href="#contact" variant="contained" color="secondary" disableElevation>
@@ -41,7 +41,7 @@ function About() {
                 </div>
               </Paper>
           </ContentBox>
-          <ContentBox size="large" image={ mainImage }></ContentBox>
+          <ContentBox size="large" image={ logo }></ContentBox>
         </Box>
       </ContainerLayout>
     )
