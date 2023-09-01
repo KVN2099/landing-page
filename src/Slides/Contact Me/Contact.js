@@ -49,7 +49,7 @@ function Contact() {
     function sendEmail(e) {
         e.preventDefault();
         if (validateFields(e.target)) {
-            emailjs.sendForm('service_6ydxn08', 'template_bqlcpy2', e.target, 'user_PXTlX7vDwNbtkwjS3hGg1')
+            emailjs.sendForm('service_26au5on', 'template_zcr2y22', e.target, 'WDXIQZupEse5Dek9d')
                 .then((result) => {
                     setSeverity("success");
                     setAlertMessage('Email sent! I will get back to you soon.');
